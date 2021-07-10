@@ -1,0 +1,19 @@
+How to make a 3D model using text
+index: Paper>Notepad>Render
+Writing on paper:
+1) Draw in paper the figure you want to model. This case I choose letter A as figure.
+2) Determine a number for each vertex, begining from '1'. Try to put it in the cartesian model (x,y), its easier if you choose 1 as maximum and 0 as minumum. You can use rational values between them, like 0.5566, 0.95 etc. 
+3) In this case, we have a 2D figure. Then I just copy it twice, one with z as 0, and another one with z as any other number. So I have 2 groups of vertexes, forming 2 identical figures (in diferent z ranges).
+4) Determine faces, it must be a group of vertexes in sequence (example 1 2 7 8). Put at the same sequence as you draw them.
+
+Transcriving to notepad:
+1) You need to write a text file, using format ASCII, and save with extension .obj. Also the syntaxis must be in the .obj language.
+2) To declare vertexes, you have to write in the following manner: 'v x y z'. Example: 'v 1.666666 0.666666 0.000000'
+Write the vertexes in the exact same order as you numbered them before. The render will number the vertexes in the order they were write. Remember to have 6 algarisms after '.'. Put 0 if your number isnt so long.
+3) To declare faces, you need to write 'f' and them list the vertexes indexes whose compose this face. E.g. 'f 4 5 8 7'
+4) Dont forget to use one line for each face and vertex and use spaces between values. Save as .obj and in ASCII encoding.
+
+Rendering: 
+1) Use a render app to show the results, like Maya, 3DMax, CAD, Blender3D. My case im using '3D viewer', avaliable on google Playstore.
+
+Some 'print's bellow
